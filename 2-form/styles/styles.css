@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Open sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+a {
+	color: #089fe0;
+}
+
+body {
+	background: linear-gradient(243.18deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
+		linear-gradient(243.43deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%),
+		linear-gradient(243.43deg, #f39494 82.03%, #f39494 100%);
+}
+
+section {
+	margin: 225px auto;
+	background: #fffefe;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	max-width: 582px;
+	padding: 91px 94px;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 49px;
+	color: #333333;
+}
+
+section > div {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 47px;
+}
+
+section > div > span {
+	color: #666666;
+}
+
+form {
+	width: 100%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+}
+
+input {
+	padding: 9px 11px;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	background-color: #f5f5f5;
+	color: #333333;
+	border: none;
+	width: 100%;
+}
+
+input::placeholder {
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #999999;
+}
+input:focus {
+	background-color: #fff;
+	border: 1px solid #f5f5f5;
+}
+
+.name {
+	display: flex;
+	gap: 1px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.name > input:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.name > input:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+button {
+	display: block;
+	padding: 9px auto;
+	font-size: 18px;
+	line-height: 25px;
+	color: #ffffff;
+	background-color: #089fe0;
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	height: 44px;
+	cursor: pointer;
+}
+
+button > img {
+	position: absolute;
+	right: 24px;
+}
+
+.agree {
+	font-size: 14px;
+	line-height: 19px;
+	color: #666666;
+}
+
+input[type="checkbox"] {
+	width: auto;
+}
+
+.agree a {
+	text-decoration: none;
+	margin-left: 10px;
+}
