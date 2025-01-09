@@ -1,19 +1,36 @@
 * {
-	/* margin: 0;
-	padding: 0; */
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	color: white;
+	box-sizing: border-box;
 }
 
-body {
+.body {
 	background-image: linear-gradient(#374151, #111827 83% 100%);
 	text-align: center;
 }
 
-.logo__badge {
+.header,
+main,
+.footer {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+.header {
+	margin-top: 81px;
+	margin-bottom: 69px;
+	display: flex;
+	justify-content: space-between;
+	gap: 77px;
+	align-items: center;
+}
+
+.header__logo-badge {
 	font-family: "Source Sans 3", sans-serif;
 	font-weight: 600;
 	font-size: 18px;
@@ -24,29 +41,36 @@ body {
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 15%);
 }
 
-.logo__title {
+.header__logo-title {
 	margin-left: 11px;
 	font-size: 18px;
 	line-height: 21px;
 }
 
-ul {
+.header__menu {
 	list-style: none;
+	display: flex;
+	gap: 52px;
 }
 
-ul > li {
+.header__menu > li {
 	font-size: 16px;
 	line-height: 19px;
 }
 
-.search {
+.header__search {
 	padding: 9px 18px 12px;
 	background-color: #1f2937;
 	opacity: 0.6;
 	border-radius: 100px;
+	max-width: 224px;
+	display: flex;
+	gap: 17px;
+	align-items: center;
+	margin-left: auto;
 }
 
-.search input {
+.header__search input {
 	font-size: 16px;
 	line-height: 19px;
 	opacity: 0.6;
@@ -58,16 +82,29 @@ ul > li {
 	font-size: 14px;
 	line-height: 16px;
 	opacity: 0.6;
+	margin-bottom: 14px;
 }
 
 h1 {
 	font-size: 24px;
 	line-height: 38px;
+	max-width: 525px;
+	margin: 0 auto 30px;
+}
+
+.avatar {
+	margin-bottom: 28px;
+	display: flex;
+	justify-content: center;
+	gap: 16px;
 }
 
 .avatar__text span {
 	line-height: 28px;
 	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
 }
 
 .avatar__text span:last-child {
@@ -75,17 +112,41 @@ h1 {
 	opacity: 0.6;
 }
 
-section > p {
-	font-size: 16px;
-	line-height: 30px;
+.article__photo {
+	margin-bottom: 69px;
 }
 
-section > img + p {
+.article__text {
+	max-width: 708px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.article__text > p {
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+
+.article__text > p:last-child {
+	margin-bottom: 0;
+}
+
+.article__text > img + p {
 	font-size: 20px;
 	line-height: 32px;
 }
 
-footer > p {
+.article__text > p > a {
+	text-decoration: underline;
+}
+
+.footer {
+	margin-top: 103px;
+	margin-bottom: 77px;
+}
+
+.footer > p {
 	font-size: 16px;
 	line-height: 28px;
 	opacity: 0.6;
