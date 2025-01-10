@@ -60,6 +60,7 @@ input {
 	line-height: 22px;
 	background-color: #f5f5f5;
 	color: #333333;
+	caret-color: #089FE0;
 	border: none;
 	width: 100%;
 }
@@ -71,9 +72,10 @@ input::placeholder {
 	line-height: 22px;
 	color: #999999;
 }
+
 input:focus {
 	background-color: #fff;
-	border: 1px solid #f5f5f5;
+	outline: 1px solid #f5f5f5;
 }
 
 .name {
@@ -83,12 +85,12 @@ input:focus {
 	justify-content: space-between;
 }
 
-.name > input:first-child {
+.name > label:first-child > input {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
 
-.name > input:last-child {
+.name > label:last-child > input {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
@@ -116,10 +118,13 @@ button > img {
 	font-size: 14px;
 	line-height: 19px;
 	color: #666666;
+	display: flex;
+	align-items: baseline;
 }
 
 input[type="checkbox"] {
 	width: auto;
+	margin-right: 4px;
 }
 
 .agree a {
