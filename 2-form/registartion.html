@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Регистрация</title>
+	</head>
+	<body>
+		<section>
+			<form
+				action="#"
+				method="get"
+			>
+				<h1>Регистрация</h1>
+				<span>Уже есть аккаунт?</span>
+				<a href="#">Войти</a>
+				<div>
+					<input
+						type="text"
+						placeholder="Компания"
+						name="company"
+						value="Моя компания"
+						required
+						size="46"
+					/>
+				</div>
+				<div>
+					<label>
+						<input
+							type="text"
+							name="name"
+							placeholder="Имя"
+							minlength="1"
+						/>
+					</label>
+					<label>
+						<input
+							type="text"
+							name="family"
+							placeholder="Фамилия"
+							minlength="1"
+						/>
+					</label>
+				</div>
+				<div>
+					<input
+						type="email"
+						name="email"
+						placeholder="E-mail"
+						size="46"
+					/>
+				</div>
+				<button>
+					<div>
+						<span>Зарегистрироваться</span>
+						<span>&#8594;</span>
+					</div>
+				</button>
+				<div>
+					<div>
+						<input
+							type="checkbox"
+							id="agree"
+							name="agree"
+							required
+						/>
+					</div>
+					<label for="agree">Я прочитал и принимаю</label>
+					<a href="#">Условия использования</a>
+				</div>
+			</form>
+		</section>
+	</body>
+</html>
