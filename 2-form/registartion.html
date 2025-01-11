@@ -27,66 +27,71 @@
 	</head>
 	<body>
 		<section>
-			<h1>Регистрация</h1>
 			<div>
-				<span>Уже есть аккаунт?</span>
-				<a href="#">Войти</a>
-			</div>
-			<form
-				action="#"
-				method="get"
-			>
-				<div>
-					<input
-						type="text"
-						placeholder="Компания"
-						name="company"
-						value="Моя компания"
-						required
-					/>
+				<h1>Регистрация</h1>
+				<div class="account">
+					<span>Уже есть аккаунт?</span>
+					<a href="#">Войти</a>
 				</div>
-				<div class="name">
-					<label>
-						<input
-							type="text"
-							name="name"
-							placeholder="Имя"
-							minlength="1"
-						/>
-					</label>
-					<label>
-						<input
-							type="text"
-							name="family"
-							placeholder="Фамилия"
-							minlength="1"
-						/>
-					</label>
-				</div>
-				<div>
-					<input
-						type="email"
-						name="email"
-						placeholder="E-mail"
-					/>
-				</div>
-				<button>
-						<span>Зарегистрироваться</span>
-						<img src="./images/Arrow 1.svg" alt="кнопка зарегистрироваться">
-				</button>
-				<div class="agree">
+				<form
+					action="#"
+					method="get"
+				>
 					<div>
 						<input
-							type="checkbox"
-							id="agree"
-							name="agree"
+							type="text"
+							placeholder="Компания"
+							name="company"
+							value="Моя компания"
 							required
 						/>
 					</div>
-					<label for="agree">Я прочитал и принимаю</label>
-					<a href="#">Условия использования</a>
-				</div>
-			</form>
+					<div class="name">
+						<label>
+							<input
+								type="text"
+								name="name"
+								placeholder="Имя"
+								minlength="1"
+							/>
+						</label>
+						<label>
+							<input
+								type="text"
+								name="family"
+								placeholder="Фамилия"
+								minlength="1"
+							/>
+						</label>
+					</div>
+					<div>
+						<input
+							type="email"
+							name="email"
+							placeholder="E-mail"
+						/>
+					</div>
+					<button>
+						<span>Зарегистрироваться</span>
+						<img
+							src="./images/Arrow 1.svg"
+							alt="кнопка зарегистрироваться"
+						/>
+					</button>
+					<div class="agree">
+						<div>
+							<input
+								type="checkbox"
+								id="agree"
+								name="agree"
+								required
+							/>
+						</div>
+						<label for="agree">Я прочитал и принимаю</label>
+						<a href="#">Условия использования</a>
+					</div>
+				</form>
+			</div>
 		</section>
 	</body>
 </html>

@@ -15,10 +15,17 @@ body {
 	background: linear-gradient(243.18deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
 		linear-gradient(243.43deg, #ffa5a5 32.96%, rgba(255, 255, 255, 0) 82.03%),
 		linear-gradient(243.43deg, #f39494 82.03%, #f39494 100%);
+	/* max-height: 100%; */
 }
 
 section {
-	margin: 225px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section > div {
 	background: #fffefe;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
@@ -34,13 +41,10 @@ h1 {
 	color: #333333;
 }
 
-section > div {
+.account {
+	margin-bottom: 47px;
 	font-size: 18px;
 	line-height: 25px;
-	margin-bottom: 47px;
-}
-
-section > div > span {
 	color: #666666;
 }
 
@@ -60,7 +64,7 @@ input {
 	line-height: 22px;
 	background-color: #f5f5f5;
 	color: #333333;
-	caret-color: #089FE0;
+	caret-color: #089fe0;
 	border: none;
 	width: 100%;
 }
