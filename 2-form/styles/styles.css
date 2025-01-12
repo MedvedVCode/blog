@@ -9,6 +9,15 @@
 
 a {
 	color: #089fe0;
+	transition-property: color, transform, text-decoration;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+a:hover {
+	transform: scale(105%);
+	color: #08668e;
+	text-decoration: none;
 }
 
 body {
@@ -75,6 +84,7 @@ input::placeholder {
 	font-weight: 400;
 	line-height: 22px;
 	color: #999999;
+	transition: font-size 0.5s ease;
 }
 
 input:focus {
@@ -82,9 +92,13 @@ input:focus {
 	outline: 1px solid #f5f5f5;
 }
 
+input:hover::placeholder {
+	font-size: 17px;
+}
+
 .name {
 	display: flex;
-	gap: 1px;
+	gap: 3px;
 	width: 100%;
 	justify-content: space-between;
 }
@@ -101,7 +115,7 @@ input:focus {
 
 button {
 	display: block;
-	padding: 9px auto;
+	padding: 9px 0;
 	font-size: 18px;
 	line-height: 25px;
 	color: #ffffff;
@@ -111,6 +125,18 @@ button {
 	position: relative;
 	height: 44px;
 	cursor: pointer;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+button:hover {
+	background-color: #08668e;
+}
+
+button:hover > span {
+	transform: scale(105%);
+	color: tomato;
 }
 
 button > img {
@@ -126,9 +152,15 @@ button > img {
 	align-items: baseline;
 }
 
-input[type="checkbox"] {
-	width: auto;
+.agree > div {
+	width: 15px;
+	height: 16px;
 	margin-right: 4px;
+	display: flex;
+}
+
+input[type="checkbox"] {
+	background-color: #f5f5f5;
 }
 
 .agree a {
