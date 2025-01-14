@@ -1,0 +1,34 @@
+:root {
+	--color-header: #000;
+	--color-table: #4e5d7c;
+	--color-table-separator: #f1f2f5;
+	--color-description: #a6aebd;
+	--color-description-highlight: #aecbff;
+	--color-badge-green: #1abc9c;
+	--color-badge-yellow: #ffc736;
+	--color-bg-blue: #357efe;
+	--color-white: #fff;
+
+	--radius-8: 8px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
