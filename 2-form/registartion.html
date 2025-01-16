@@ -6,72 +6,92 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="./styles/styles.css"
+		/>
 		<title>Регистрация</title>
 	</head>
 	<body>
 		<section>
-			<form
-				action="#"
-				method="get"
-			>
+			<div>
 				<h1>Регистрация</h1>
-				<span>Уже есть аккаунт?</span>
-				<a href="#">Войти</a>
-				<div>
-					<input
-						type="text"
-						placeholder="Компания"
-						name="company"
-						value="Моя компания"
-						required
-						size="46"
-					/>
+				<div class="account">
+					<span>Уже есть аккаунт?</span>
+					<a href="#">Войти</a>
 				</div>
-				<div>
-					<label>
-						<input
-							type="text"
-							name="name"
-							placeholder="Имя"
-							minlength="1"
-						/>
-					</label>
-					<label>
-						<input
-							type="text"
-							name="family"
-							placeholder="Фамилия"
-							minlength="1"
-						/>
-					</label>
-				</div>
-				<div>
-					<input
-						type="email"
-						name="email"
-						placeholder="E-mail"
-						size="46"
-					/>
-				</div>
-				<button>
-					<div>
-						<span>Зарегистрироваться</span>
-						<span>&#8594;</span>
-					</div>
-				</button>
-				<div>
+				<form
+					action="#"
+					method="get"
+				>
 					<div>
 						<input
-							type="checkbox"
-							id="agree"
-							name="agree"
+							type="text"
+							placeholder="Компания"
+							name="company"
+							value="Моя компания"
 							required
 						/>
 					</div>
-					<label for="agree">Я прочитал и принимаю</label>
-					<a href="#">Условия использования</a>
-				</div>
-			</form>
+					<div class="name">
+						<label>
+							<input
+								type="text"
+								name="name"
+								placeholder="Имя"
+								minlength="1"
+							/>
+						</label>
+						<label>
+							<input
+								type="text"
+								name="family"
+								placeholder="Фамилия"
+								minlength="1"
+							/>
+						</label>
+					</div>
+					<div>
+						<input
+							type="email"
+							name="email"
+							placeholder="E-mail"
+						/>
+					</div>
+					<button>
+						<span>Зарегистрироваться</span>
+						<img
+							src="./images/Arrow 1.svg"
+							alt="кнопка зарегистрироваться"
+						/>
+					</button>
+					<div class="agree">
+						<div>
+							<input
+								type="checkbox"
+								id="agree"
+								name="agree"
+								required
+							/>
+						</div>
+						<label for="agree">Я прочитал и принимаю</label>
+						<a href="#">Условия использования</a>
+					</div>
+				</form>
+			</div>
 		</section>
 	</body>
 </html>

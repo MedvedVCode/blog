@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	box-sizing: border-box;
+}
+
+.body {
+	background-image: linear-gradient(#374151, #111827 83% 100%);
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+.header {
+	padding: 70px 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 77px;
+	align-items: center;
+}
+
+.header__logo-badge {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+	padding: 6px 12px;
+	background-color: #4b5563;
+	border-radius: 3px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 15%);
+}
+
+.header__logo-title {
+	margin-left: 11px;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.header__menu {
+	list-style: none;
+	display: flex;
+	gap: 52px;
+}
+
+.header__menu > li {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.header__search {
+	padding: 9px 18px 12px;
+	background-color: #1f2937;
+	opacity: 0.6;
+	border-radius: 100px;
+	max-width: 224px;
+	display: flex;
+	gap: 17px;
+	align-items: baseline;
+	margin-left: auto;
+}
+
+.header__search input {
+	font-size: 16px;
+	line-height: 19px;
+	opacity: 0.6;
+	background: none;
+	border: none;
+}
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 16px;
+	opacity: 0.6;
+	margin-bottom: 14px;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 38px;
+	max-width: 525px;
+	margin: 0 auto 30px;
+}
+
+.article > div img {
+	width: 100%;
+	height: 100%;
+}
+
+.avatar {
+	margin-bottom: 28px;
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+
+.avatar__photo {
+	width: 50px;
+	max-width: 100%;
+	height: 50px;
+	max-height: 100%;
+}
+
+.avatar__text span {
+	line-height: 28px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.avatar__text span:last-child {
+	font-size: 14px;
+	opacity: 0.6;
+}
+
+.article__photo {
+	width: 896px;
+	max-width: 100%;
+	height: 594px;
+	max-height: 100%;
+	margin: 0 auto 69px;
+}
+
+.article__text {
+	max-width: 708px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 16px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+
+.article__text:last-child {
+	margin-bottom: 0;
+}
+
+.article__text--larger {
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.article__text > p > a {
+	text-decoration: underline;
+}
+
+.footer {
+	padding: 103px 0 77px;
+}
+
+.footer > p {
+	font-size: 16px;
+	line-height: 28px;
+	opacity: 0.6;
+}
