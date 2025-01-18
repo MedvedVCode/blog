@@ -1,21 +1,32 @@
 :root {
 	--color-header: #000;
-	--color-table: #4e5d7c;
-	--color-table-separator: #f1f2f5;
+	--color-text-table: #4e5d7c;
 	--color-description: #a6aebd;
 	--color-description-highlight: #aecbff;
 	--color-badge-green: #1abc9c;
 	--color-badge-yellow: #ffc736;
 	--color-bg-blue: #357efe;
+	--color-bg-gray: #1a1d25;
 	--color-white: #fff;
+	--color-separator-white: #f1f2f5;
+	--color-separator-blue: #5593fe;
+	--color-separator-gray: #2c2f36;
 
 	--radius-8: 8px;
+	--radius-16: 16px;
+	--layout-width: 1440px;
+
+	--padding-40: 40px;
+	--padding-80: 80px;
+	--padding-118: 118px;
+	--padding-120: 120px;
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	color: var(--color-white);
 }
 
 html {
@@ -31,4 +42,34 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.container {
+	max-width: var(--layout-width);
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.background-blue {
+	background-color: var(--color-bg-blue);
+}
+
+.background-white {
+	background-color: var(--color-white);
+}
+
+.color-blue {
+	color: var(--color-bg-blue);
+}
+
+.color-white {
+	color: var(--color-white);
+}
+
+.color-header {
+	color: var(--color-header);
+}
+
+.color-description {
+	color: var(--color-description);
 }

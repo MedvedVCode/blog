@@ -1,12 +1,46 @@
-/* Container ------------------------*/
-.container {
-	max-width: 1392px;
-	margin: 0 auto;
+/* Logo ------------------------------*/
+.logo {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 140%;
+	color: #ffffff;
+}
+
+/* Menu ----------------------------- */
+.menu {
+	list-style: none;
+	display: flex;
+	gap: 32px;
+}
+
+.menu li {
+	opacity: 0.8;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 140%;
+	transition: opacity 0.5s ease;
+}
+
+.menu li:hover {
+	opacity: 1;
+}
+
+/* Button ------------------------------*/
+.button {
+	font-weight: 800;
+	font-size: 17px;
+	line-height: 140%;
+	cursor: pointer;
+	text-align: center;
+	padding: 12px 32px;
+	border-radius: 47px;
+	white-space: nowrap;
+	display: inline-block;
 }
 
 /* Headling --------------------------*/
 .headling {
-	padding: 80px 0 40px;
 	text-align: center;
 }
 
@@ -14,7 +48,6 @@
 	font-size: 48px;
 	line-height: 120%;
 	font-weight: 600;
-	color: var(--color-header);
 }
 
 .headling__text {
@@ -24,33 +57,52 @@
 	margin-top: 24px;
 }
 
-@media (max-width: 760px){
+@media (max-width: 760px) {
 	.headling__title {
 		font-size: 36px;
 	}
 }
 
-/* Description -------------------------*/
-.description {
+/* Headling-h3 --------------------------*/
+.headling-h3__title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 120%;
+	/* color: var(--color-header); */
+}
+
+.headling-h3__text {
+	margin-top: 24px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 140%;
+	/* color: var(--color-description); */
+}
+
+@media (max-width: 760px) {
+	.headling-h3__title {
+		font-size: 32px;
+	}
+}
+
+/* Headling-h4 --------------------------*/
+.headling-h4__title {
+	color: var(--color-header);
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+}
+
+.headling-h4__text {
+	margin-top: 20px;
 	color: var(--color-description);
-}
-
-.description_ghost {
-	color: var(--color-description-highlight);
-}
-
-/* Button ------------------------------*/
-.button {
-	font-weight: 800;
+	font-weight: 500;
 	font-size: 17px;
 	line-height: 140%;
-	color: var(--color-bg-blue);
-	background-color: var(--color-white);
-	display: inline-block;
-	cursor: pointer;
-	text-align: center;
-	padding: 12px 0;
-	border-radius: 47px;
-	width: 100%;
 }
 
+@media (max-width: 760px) {
+	.headling-h4__title {
+		font-size: 24px;
+	}
+}
