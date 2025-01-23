@@ -47,22 +47,17 @@ const modifyDate = (arr) => {
 	return arr
 		.map((date) => {
 			if (date.indexOf('/') !== -1) {
-
 				date = date.split('/').map((el) => Number(el));
-
 				const temp = date[0];
 				date[0] = date[1];
 				date[1] = temp;
-
 				const isValidDate = checkDate(date);
 				return isValidDate
 					? date.map((el) => String(el).padStart(2, '0')).join('-')
 					: false;
 			} 
 			else if (date.indexOf('-') !== -1) {
-
 				date = date.split('-').map((el) => Number(el));
-				
 				const isValidDate = checkDate(date);
 				return isValidDate
 					? date.map((el) => String(el).padStart(2, '0')).join('-')
