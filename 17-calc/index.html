@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Калькулятор</title>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+		<script
+			src="./app.js"
+			defer
+		></script>
+	</head>
+	<body>
+		<section class="calc">
+			<div class="container calc__wrapper">
+				<article class="">
+					<div class="message message__success message_hidden">
+						Операция сохранена в журнал!
+					</div>
+					<div class="operands border">
+						<label class="operand__label"
+							><span>Число 1</span>
+							<input
+								class="operand operand_input"
+								placeholder="Введите число"
+								id="operand-first"
+								type="text"
+							/>
+						</label>
+						<label class="operand__label"
+							><span>Число 2</span>
+							<input
+								id="operand-second"
+								class="operand operand_input"
+								placeholder="Введите число"
+								type="text"
+							/>
+						</label>
+						<div
+							class="operand operand_result"
+							id="operand-result"
+						>
+						&nbsp;
+						</div>
+					</div>
+					<div class="operations border">
+						<button
+							class="btn"
+							id="plus"
+							onclick="buttonClick(event)"
+						>
+							+
+						</button>
+						<button
+							class="btn"
+							id="sub"
+							onclick="buttonClick(event)"
+						>
+							-
+						</button>
+						<button
+							class="btn"
+							id="multi"
+							onclick="buttonClick(event)"
+						>
+							*
+						</button>
+						<button
+							class="btn"
+							id="divide"
+							onclick="buttonClick(event)"
+						>
+							/
+						</button>
+						<button
+							class="btn"
+							id="clear"
+							onclick="buttonClick(event)"
+						>
+							Очистить историю
+						</button>
+					</div>
+					<div class="history border">
+						<!-- <p>12 + 7 = 19</p> -->
+					</div>
+				</article>
+			</div>
+		</section>
+	</body>
+</html>
